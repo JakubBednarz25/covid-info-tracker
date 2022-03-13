@@ -1,0 +1,69 @@
+.ranking {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ranking ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ranking ul li h1 {
+  margin: 0px 10px 0px 0px;
+  font-size: 60px;
+  color: #167422;
+}
+
+.ranking ul li h1 sup {
+  font-size: 20px;
+  color: #0f5217;
+}
+
+.ranking ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 5px 15px 5px 0px;
+  padding: 5px;
+  width: 180px;
+  animation: countryEnter 0.5s ease-in-out forwards;
+}
+
+@keyframes countryEnter {
+  from {
+    opacity: 0;
+    transform: translate(40px, 25px) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes rankingTitleEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.ranking h2 {
+  display: flex;
+  align-items: flex-end;
+  animation: rankingTitleEnter 0.5s ease-in-out forwards;
+}
+
+.ranking h2 p {
+  font-size: 14px;
+  margin: 0px 0px 0px 5px;
+}

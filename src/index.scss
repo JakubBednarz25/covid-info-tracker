@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: #0f5217;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  color: rgb(126, 126, 126);
+}
+
+br {
+  margin: 25px 0px 25px 0px;
+}
+
+.ranking,
+.global {
+  background-image: linear-gradient(to bottom, #d4fc79 0%, #96e6a1 100%);
+  padding: 25px 10px 25px 10px;
+  margin: 0px 0px 50px 0px;
+  border-radius: 30px;
+  max-width: 80vw;
+}
+
+.ranking h2,
+.global h2 {
+  margin: 5px 5px 20px 5px;
+}
+
+.global ul li p,
+.ranking p {
+  color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+  .ranking ul,
+  .global ul {
+    justify-content: center;
+  }
+}
